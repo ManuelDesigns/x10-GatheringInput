@@ -4,21 +4,23 @@
       <meta charset="utf-8">
       <title>Gathering-Input</title>
 
-<script>
-function getName(){
-  var fullName;
-  fullName = document.getElementById("first").value;
-  document.getElementById("message").innerHTML = fullName;
-
+      <script>
+      function getName(){
+      var fullName;
+      fullName = document.getElementById("first").value;
+      document.getElementById("message").innerHTML = fullName;
+      fullName = document.getElementById("last").value;
+      document.getElementById("output").innerHTML = fullName;
   }
     </script>
-    </head>
+  </head>
+
 <body>
 
 <h1>Gathering Input</h1>
 
-<input type="text" name="FirstName" value=""><br>
-<input type="text" name="LastName" value=""><br>
+<input type="text" id="first"><br>
+<input type="text" id="last"><br>
 
 
 <button type="button" id="doneButton" type="button" onclick="getName();">Done</button>
